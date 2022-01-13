@@ -1,0 +1,8 @@
+{
+    "eslint.validata": [
+        "javascript",
+        "javascriptreact",
+        { "languege": "typescript", "autoFix": true },
+        { "languege": "typescriptreact", "autoFix": true }
+    ]
+}

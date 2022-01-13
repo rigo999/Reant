@@ -8,19 +8,13 @@ function App() {
                 <Button disabled>
                     disabled default
                 </Button>
-                <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>
-                    pSmall
-                </Button>
-                <Button btnType={ButtonType.Danger}>
-                    daSmall
-                </Button>
-                <Button onClick={(e) => {e.preventDefault(); alert(123)}}>
-                    default
-                </Button>
                 <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
                     pLarge
                 </Button>
-                <Button btnType={ButtonType.Link} href="http://wwww.baidu.com" target="_blank">
+                <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>
+                    pSmall
+                </Button>
+                <Button btnType={ButtonType.Link} href="http://wwww.baidu.com">
                     Baidu Link
                 </Button>
                 <Button btnType={ButtonType.Link} href="http://wwww.baidu.com" disabled>

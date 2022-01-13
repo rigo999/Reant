@@ -6,25 +6,16 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <Button disabled>
-                    disabled default
-                </Button>
-                <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>
-                    pSmall
-                </Button>
-                <Button btnType={ButtonType.Danger}>
-                    daSmall
-                </Button>
-                <Button onClick={(e) => {e.preventDefault(); alert(123)}}>
-                    default
+                    Hello
                 </Button>
                 <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
-                    pLarge
+                    Hello
                 </Button>
-                <Button btnType={ButtonType.Link} href="http://wwww.baidu.com" target="_blank">
+                <Button btnType={ButtonType.Link} href="http://wwww.baidu.com">
                     Baidu Link
                 </Button>
-                <Button btnType={ButtonType.Link} href="http://wwww.baidu.com" disabled>
-                    disabled Link
+                <Button btnType={ButtonType.Link} href="http://wwww.baidu.com" disabled={true}>
+                    Baidu Link
                 </Button>
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.

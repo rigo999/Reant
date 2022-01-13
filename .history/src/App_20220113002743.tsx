@@ -20,7 +20,7 @@ function App() {
                 <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
                     pLarge
                 </Button>
-                <Button btnType={ButtonType.Link} href="http://wwww.baidu.com" target="_blank">
+                <Button btnType={ButtonType.Link} href="http://wwww.baidu.com">
                     Baidu Link
                 </Button>
                 <Button btnType={ButtonType.Link} href="http://wwww.baidu.com" disabled>
