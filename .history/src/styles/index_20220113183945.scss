@@ -1,0 +1,19 @@
+// 样式的入口文件
+/*
+    *因为该文件是从上至下执行的,先有变量和reboot,才有下面文件引入的东西
+*/
+
+// config
+@import "variables";
+
+// layout
+@import "reboot";
+
+// mixin
+@import "mixin";
+
+// button
+@import "../components/Button/_style";
+
+// alert
+@import "../components/Alert/_style";
