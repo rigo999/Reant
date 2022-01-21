@@ -26,7 +26,7 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
     /* 创建一个回调函数 */
     const handleClick = () => {
         // onSelect 有可能存在有可能不存在,并且有 disabled 影响,做一个判断
-        if(context.onSelect && !disabled && (typeof index === 'number')) {
+        if(context.onSelect && !disabled) {
             context.onSelect(index)
         }
     }

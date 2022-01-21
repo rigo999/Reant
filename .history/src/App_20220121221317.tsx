@@ -3,7 +3,6 @@ import Button, { ButtonType, ButtonSize } from "./components/Button/button";
 import Alert, { AlertType } from "./components/Alert/alert";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem"
-import SubMenu from "./components/Menu/subMenu";
 
 const App: React.FC = () => {
     return (
@@ -11,9 +10,7 @@ const App: React.FC = () => {
             <header className="App-header">
                 <Menu onSelect={(index) => {console.log(index);}}>
                     <MenuItem>cool link</MenuItem>
-                    <SubMenu title="123">
-                        <MenuItem disabled>cool link2</MenuItem>
-                    </SubMenu>
+                    <MenuItem disabled>cool link2</MenuItem>
                     <MenuItem>cool link3</MenuItem>
                 </Menu>
                 <Menu

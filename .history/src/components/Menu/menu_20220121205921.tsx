@@ -80,7 +80,7 @@ const Menu: React.FC<MenuProps> = (props) => {
             // 为了拿到 displayName, 要做类型断言,转成 functional component 实例
             const childElement = child as React.FunctionComponentElement<MenuItemProps>
             const { displayName } = childElement.type
-            if(displayName === 'MenuItem' || displayName === 'SubMenu') {
+            if(displayName === 'MenuItem') {
                 /* 使用 cloneElement() 方法来克隆返回新的 React 元素,返回元素的 props 是将新的 props 与原始元素的 props 浅层合并后的结果(混入进去了) */
                 return React.cloneElement(childElement, {
                     index

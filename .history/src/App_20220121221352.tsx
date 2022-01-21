@@ -11,9 +11,7 @@ const App: React.FC = () => {
             <header className="App-header">
                 <Menu onSelect={(index) => {console.log(index);}}>
                     <MenuItem>cool link</MenuItem>
-                    <SubMenu title="123">
-                        <MenuItem disabled>cool link2</MenuItem>
-                    </SubMenu>
+                    <MenuItem disabled>cool link2</MenuItem>
                     <MenuItem>cool link3</MenuItem>
                 </Menu>
                 <Menu

@@ -36,8 +36,7 @@ const Menu: React.FC<MenuProps> = (props) => {
             根据传入的值 添加 menu-vertical
     */
     const classes = classNames('reant-menu', className, {
-        'menu-vertical': mode === 'vertical',
-        'menu-horizontal': mode !== 'vertical',
+        'menu-vertical': mode === 'vertical'
     })
     /*
         创建一个点击事件函数
@@ -80,11 +79,8 @@ const Menu: React.FC<MenuProps> = (props) => {
             // 为了拿到 displayName, 要做类型断言,转成 functional component 实例
             const childElement = child as React.FunctionComponentElement<MenuItemProps>
             const { displayName } = childElement.type
-            if(displayName === 'MenuItem' || displayName === 'SubMenu') {
-                /* 使用 cloneElement() 方法来克隆返回新的 React 元素,返回元素的 props 是将新的 props 与原始元素的 props 浅层合并后的结果(混入进去了) */
-                return React.cloneElement(childElement, {
-                    index
-                })
+            if(displayName === 'MenuItem') {
+                return child
             } else {
                 console.error("Warning: Menu has a child which is not a MenuItem component");
             }
@@ -95,7 +91,7 @@ const Menu: React.FC<MenuProps> = (props) => {
         <ul className={classes} style={styles} data-testid="test-menu">
             {/* 传入,将 context 注入到 provider 里面了 */}
             <MenuContext.Provider value={passedContext}>
-                {renderChildren()}
+                {renderChildren}
             </MenuContext.Provider>
         </ul>
     )
