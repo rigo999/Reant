@@ -1,0 +1,15 @@
+.info-table {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.info-table, .info-table td, .info-table th {
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+    color: #444444;
+    margin-top: 0.25rem;
+    padding-right: 0.25rem;
+    padding: 0.25rem;
+    text-align: left;
+    vertical-align: top;
+}
